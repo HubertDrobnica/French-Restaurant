@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+  <title>French Restaurants</title>
+</head>
+<body>
+  <!-- modal -->
+  <div id="modal-body">
+    <form id="modal-form">
+      <h2>Fill all the form fields</h2>
+      <p>*Warning: Rate's field is not required</p>
+      <div><label for="img">img url: </label><input id="form-img" type="text" name="img"></div>
+      <div><label for="rate">Rate: </label><input id="form-rate" type="text" name="rate"></div>
+      <div><label for="name">Name: <input id="form-name" type="text" name="name"></label></div>
+      <div><label for="owner">Owner: </label><input id="form-owner" type="text" name="owner"></div>  
+      <label for="presentation">Presentation: </label><textarea id="form-presentation" name="presentation" cols="60" rows="6"></textarea>
+      <button id="form-button">Submit</button>
+      <span id="exit">x</span>
+    </form>
+
+  </div>
+  <!-- Header  -->
+  <header><h1 id="title">French Restaurants</h1><div><input type="search" placeholder="Search Name"><button>Add Restaurant</button></div></header>
+  <div class="container"></div>
+  <div class="new-restaurants"></div>
+
+
+
+  <script type="module"  src="app.js"></script>
+</body>
+</html>
+
+
+
+
+

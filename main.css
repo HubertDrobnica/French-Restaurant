@@ -1,0 +1,196 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f6f6f6;
+  font-size: 20px;
+  font-family: 'EB Garamond', serif;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* max-width: 1100px; */
+  width: 80%;
+  margin: 2rem auto;
+}
+
+header input {
+  border: 1px solid #f1f1f1;
+  padding: 0.40rem 0.5rem;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  font-family: 'EB Garamond', serif;
+  border-radius: 5px;
+  margin: 0 2rem 0 0;
+}
+
+header button, #modal-form button {
+  background-color: rgb(199, 184, 74);
+  border: 1px solid #f1f1f1;
+  outline: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  font-family: 'EB Garamond', serif;
+  border-radius: 5px;
+  color: #333;
+}
+
+#title {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.restaurant {
+  display: flex;
+  background-color: #fff;
+  padding: 1.25rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  margin: 3rem 0 0 0;
+}
+
+.restaurant:last-child {
+  margin: 3rem 0 3rem 0;
+}
+
+.img {
+  max-width: 250px;
+  height: 175px;
+  vertical-align: top;
+  border: 4px solid rgb(199, 184, 74);
+}
+
+.info {
+  margin: 0 0 0 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-element {
+  margin: 0 0.5rem 1rem 0;
+  font-weight: bolder;
+}
+
+.fa-star {
+  color: rgb(199, 184, 74);
+  margin: 0 2px 0 2px;
+}
+
+
+a {
+  color: rgb(199, 184, 74);
+  text-decoration: none;
+}
+
+
+/* Modal */
+
+
+#modal-body {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; 
+  background-color: rgb(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+} 
+
+#modal-body-active {
+  display: flex;
+}
+
+#modal-form {
+  position: relative;
+  min-height: 550px;
+  height: 60%;
+  min-width: 500px;
+  width: 40%;
+  padding: 2rem;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 3px;
+}
+
+
+#modal-form input {
+  border: 1px solid #ddd;
+  padding: 0.25rem 0.5rem;
+  font-size: 16px;
+  outline-color: #f1f1f1;
+  font-family: 'EB Garamond', serif;
+  border-radius: 5px;
+  color: #333;
+}
+
+#modal-form textarea {
+  border: 1px solid #ddd;
+  outline: none;
+  font-family: 'EB Garamond', serif;
+  padding: 0.5rem;
+}
+
+#exit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0rem 0.75rem;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/* Media queries */
+
+@media (max-width: 850px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  header div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header input {
+    margin: 0;
+  }
+
+  header button {
+    width: 100px;
+    margin: 40px 0 0 0;
+  }
+
+  .restaurant {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info {
+    margin: 30px 0 0 0;
+  }
+}
+
+/*    Comments Form    */
+
